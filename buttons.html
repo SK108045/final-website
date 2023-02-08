@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>buttons</title>
+        <link rel="stylesheet" href="styles/buttons.css"> 
+        <style>
+            .subscribe-button{
+            background-color: rgb(233, 38, 38);
+            color: white;
+            border: none;
+            height: 36px;
+            width: 105px;
+            border-radius: 5px;
+            margin-right: 20px;
+            cursor: pointer;
+            transition: opacity 0.8s, box-shadow 1s;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            vertical-align: top;
+            position: fixed;
+            bottom: 20px;
+            left: 10%;
+            transform: translateX(-50%);       
+        }
+        .subscribe-button:hover{
+            opacity: 0.5;
+            box-shadow: 5px 5px 5px rgba(255, 0, 0, 0.4)
+     
+        }
+     
+        .subscribe-button:active{
+            background-color: blue;
+        }
+     
+        .join-button{
+            background-color: rgb(100, 65, 165);
+            color: white;
+            border: none;
+            font-weight: bold;
+            height: 36px;
+            width: 70px;
+            border-radius: 5px;
+            margin-right: 10px;
+            transition: color 1s, box-shadow 1s;
+            cursor: pointer;
+            vertical-align: bottom;
+            position: fixed;
+            bottom: 20px;
+            left: 30%;
+            transform: translateX(-50%);}
+        .join-button:active{
+            opacity: 0.5;}
+        .join-button:hover{
+            box-shadow: 5px 5px 5px rgba( 0, 0, 0, 0.4);
+            background-color: white;
+            color: rgb(100, 65, 165);        
+        }                
+        
+        .twitter-button{
+            background-color: rgb(80,133, 233);
+            color: white;
+            border: none;
+            border-radius: 5px; 
+            margin-right: 10px;
+            cursor: pointer;
+            transition: color 1s, box-shadow 1s;
+            padding-top: 10px;
+            padding-bottom: 12px;
+            padding-left: 9px;
+            vertical-align: bottom;
+            position: fixed;
+            bottom: 20px;
+            left: 53%;
+            transform: translateX(-50%); 
+                
+        }
+        .twitter-button:hover{
+           box-shadow: 5px 5px 5px rgba( 0, 0, 0, 0.4); 
+           background-color: black;
+           color: white; 
+        }
+        .twitter-button:active{
+            opacity: 0.5; 
+        }
+        
+        .john-button{
+            background-color: white;
+            border-color: rgb(80, 133, 233);
+            border-style: solid;
+            border-width: 1px;
+            height: 36px;
+            color:rgb(134, 28, 184);
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 15px;
+            transition: color 1s, box-shadow 1s;  
+            transition: background-color 1s;
+            vertical-align: bottom;     
+            position: fixed;
+            bottom: 20px;
+            left: 65%;
+            transform: translateX(-50%);       
+            }
+        .john-button:hover {
+            background-color: blue;
+            color: white;
+            box-shadow: 5px 5px 5px rgba( 0, 0, 0, 0.4)
+        }
+        .john-button:active{
+            opacity: 0.5;
+        }
+        .Facebook-button{
+            background-color: rgb(235, 15, 15);
+            border-color: rgb(3, 4, 5);
+            border-style: solid;
+            border-width: 1px;
+            height: 36px;
+            color:rgb(255, 255, 255);
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 15px;
+            transition: color 1s, box-shadow 1s;  
+            transition: background-color 1s;
+            vertical-align: bottom;
+            position: fixed;
+            bottom: 2px;
+            right: 0px;
+            position: fixed;
+            bottom: 20px;
+            left: 90%;
+            transform: translateX(-50%)       
+     
+        }
+        .Facebook-button:hover {
+            background-color: rgb(253, 34, 34);
+            color:white;
+            box-shadow: 5px 5px 5px rgba( 0, 0, 0, 0.4)
+        }   
+        .Facebook-button:active{
+            background-color: red;
+     
+        }
+        
+              
+          .large-div {
+            position: fixed;
+            top: 0;
+            width: 1030px;
+            left: 0;
+            height: 205px;
+            font-family: Arial, sans-serif;
+            font-family: Helvetica, Arial, sans-serif;
+            border-radius: 0px 15px 15px 0px;
+            z-index: 1;
+          }
+          .right-div{
+            width: 25%;
+            height: 100%;
+            position: fixed;
+            right: 0;
+            top: 0;
+            overflow-y: scroll;
+            align-items: center;
+            justify-content: center;
+            font-family: Helvetica, Arial, sans-serif;
+            background-image: url(unnamed.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          .small-div {
+            width: 60%;
+            height: 110px;
+            margin-bottom: 20px;
+            left: 10px;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: flex-end;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 2);
+            border-radius: 20px;
+            
+          }
+          .small-div:hover{
+            
+            opacity: 0.5;
+            transition: opacity 0.5s ease-in-out;
+            cursor: pointer; 
+          }
+     
+          .download.jpg{
+            position: relative;
+            }
+           
+          .text-container1{
+           position: absolute;
+           height: 100px;
+           width: 190px;
+           top: 20%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           color: rgb(255, 255, 255);
+           font-size: medium;
+           opacity: 0;
+           transition: .5s ease;
+           display: flex;
+           align-items: flex-end;
+           height: 200px;
+           font-weight: bolder;
+           font-family: Helvetica, Arial, sans-serif;
+           text-shadow: 1px 1px black;
+           
+           
+          
+          }
+          .text-container1:hover{
+            opacity: 1;
+     
+          }
+          .image34.jpg{
+            position: relative;
+          }
+          .text-container2{
+           position: absolute;
+           width: 200px;
+           height: 100px;
+           margin-top: 40px;
+           display: table-cell;
+           vertical-align: bottom;
+           top: 20%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           color: rgb(255, 255, 255);
+           font-size: medium;
+           opacity: 0;
+           transition: .5s ease;
+           display: flex;
+           align-items: flex-end;
+           height: 110px;
+           font-weight: bolder;
+           font-family: Helvetica, Arial, sans-serif;
+           text-shadow: 1px 1px black;
+          }
+          .text-container2:hover{
+            opacity: 1;
+          }
+          .tekkz.jpg{
+            position: relative;
+          }
+          .text-container3{
+           position: absolute;
+           width: 200px;
+           height: 100px;
+           margin-top: 40px;
+           display: table-cell;
+           vertical-align: bottom;
+           top: 20%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           color: rgb(255, 255, 255);
+           font-size: medium;
+           opacity: 0;
+           transition: .5s ease;
+           display: flex;
+           align-items: flex-end;
+           height: 110px;
+           font-weight: bolder;
+           font-family: Helvetica, Arial, sans-serif;
+           text-shadow: 1px 1px black;
+          }
+          .text-container3:hover{
+            opacity: 1;
+          }
+          .tekkzvfifilza.jpg{
+            position: relative;
+     
+          }
+          .text-container4{
+           position: absolute;
+           width: 200px;
+           height: 100px;
+           margin-top: 40px;
+           display: table-cell;
+           vertical-align: bottom;
+           top: 20%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           color: rgb(255, 255, 255);
+           font-size: medium;
+           opacity: 0;
+           transition: .5s ease;
+           display: flex;
+           align-items: flex-end;
+           height: 110px;
+           font-weight: bolder;
+           font-family: Helvetica, Arial, sans-serif;
+           text-shadow: 2px 2px black;
+          }
+          .text-container4:hover{
+           opacity: 1;
+          }
+          .download140.jpg{
+           position: relative;
+          }
+          .text-container5{
+           position: absolute;
+           width: 200px;
+           height: 100px;
+           margin-top: 40px;
+           display: table-cell;
+           vertical-align: bottom;
+           top: 20%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           color: rgb(255, 255, 255);
+           font-size: medium;
+           opacity: 0;
+           transition: .5s ease;
+           display: flex;
+           align-items: flex-end;
+           height: 110px;
+           font-weight: bolder;
+           font-family: Helvetica, Arial, sans-serif;
+           text-shadow: 1px 1px black;
+          }
+          .text-container5:hover{
+           opacity: 1;
+          }
+          .tekkzvanders.jpg{
+          position: relative;
+          }
+          .text-container6{
+           position: absolute;
+           width: 200px;
+           height: 100px;
+           margin-top: 40px;
+           display: table-cell;
+           vertical-align: bottom;
+           top: 20%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           color: rgb(255, 255, 255);
+           font-size: medium;
+           opacity: 0;
+           transition: .5s ease;
+           display: flex;
+           align-items: flex-end;
+           height: 110px;
+           font-weight: bolder;
+           font-family: Helvetica, Arial, sans-serif;
+           text-shadow: 1.5px 1.5px black;
+          }
+          .text-container6:hover{
+          opacity: 1;
+          }
+          .tuga.jpg{
+          position: relative;
+          }
+          .text-container7{
+           position: absolute;
+           width: 200px;
+           height: 100px;
+           margin-top: 40px;
+           display: table-cell;
+           vertical-align: bottom;
+           top: 20%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           color: rgb(255, 255, 255);
+           font-size: medium;
+           opacity: 0;
+           transition: .5s ease;
+           display: flex;
+           align-items: flex-end;
+           height: 110px;
+           font-weight: bolder;
+           font-family: Helvetica, Arial, sans-serif;
+           text-shadow: 1px 1px black;
+          }
+          .text-container7:hover{
+           opacity: 1; 
+          }
+          .NR7.jpg{
+           position: relative;
+          }
+          .text-container8{
+           position: absolute;
+           width: 200px;
+           height: 100px;
+           margin-top: 40px;
+           display: table-cell;
+           vertical-align: bottom;
+           top: 20%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           color: rgb(255, 255, 255);
+           font-size: medium;
+           opacity: 0;
+           transition: .5s ease;
+           display: flex;
+           align-items: flex-end;
+           height: 110px;
+           font-weight: bolder;
+           font-family: Helvetica, Arial, sans-serif;
+           text-shadow: 1px 1px black;
+          }
+          .text-container8:hover{
+           opacity: 1;
+          }
+          .goatmoah.jpg{
+          position: relative;
+          }
+          .text-container9{
+           position: absolute;
+           width: 200px;
+           height: 100px;
+           margin-top: 40px;
+           display: table-cell;
+           vertical-align: bottom;
+           top: 20%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           color: rgb(255, 255, 255);
+           font-size: medium;
+           opacity: 0;
+           transition: .5s ease;
+           display: flex;
+           align-items: flex-end;
+           height: 110px;
+           font-weight: bolder;
+           font-family: Helvetica, Arial, sans-serif;
+           text-shadow: 1px 1px black;
+          }
+          .text-container9:hover{
+          opacity: 1;
+          }
+          .center-div{
+            position: fixed;
+            overflow: hidden;
+            left: 0;
+            bottom:60px;
+            height: 382px;
+            width: 1025px;
+            border-radius: 0px 15px 15px 0px;
+            
+          }
+          .initial-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: all 0.5s ease-in-out;
+     
+          }
+          .new-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+          }
+          .center-div:hover .initial-image {
+            opacity: 0;
+          }
+          .center-div:hover .new-image {
+            opacity: 1;
+          }
+          #video,#video2,#video3,#video4,#video5,#video6,#video7,#video8,#video9 {
+          display: none;
+          position: fixed;
+          top: 0;
+          width: 1025px;
+          left: 0;
+          height: 205px;
+          z-index: 2;
+
+          }
+         
+          
+     
+     </style>       
+         
+    </head>
+    <body>
+        <button  class="subscribe-button"onclick="window.open('https://www.youtube.com/@F2Tekkz', '_blank')">SUBSCRIBE</button>
+        <button class="join-button" onclick="window.open('https://www.twitch.tv/dhtekkz', '_blank')">TWITCH</button>
+        <button class="twitter-button"onclick="window.open('https://twitter.com/Tekkz?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor', '_blank')">TWITTER Join My Channel</button>
+        <button class="john-button"onclick="window.open('http://127.0.0.1:5500/buttons.html')">JOHN</button>
+        <button class="Facebook-button" onclick="window.open('https://www.youtube.com/@F2Tekkz', '_blank')">DHTEKKZ</button>
+        <body style="background-image: url('fifa20.jpg'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+
+        <div class="large-div">
+        <div class="right-div">
+            <p>
+                PLAYLIST
+            </p>
+          
+            <div class="small-div">
+              <img src="download.jpg" alt=""style="width: 100%; height: auto; object-fit: contain;">
+              <div class="text-container1">
+                <P>FUT CHAMPIONS CUP</P>
+              </div>
+            </div>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Vmsk4PlxdiU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+               
+            <div class="small-div">
+                <img src="image34.jpg" alt=""style="width: 100%; height: auto; object-fit: contain;">
+               <div class="text-container2">
+                <p>
+                   RETRO STYLE  
+                </p>
+               </div> 
+            </div>
+            <iframe id="video2" width="560" height="315" src="https://www.youtube.com/embed/jbCzFEvx8tw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+            <div class="small-div">
+                <img src="tekkz.jpg" alt=""style="width: 100%; height: auto; object-fit: contain;">
+                <div class="text-container3">
+                <p>
+                   TEKKZ V MSDOSSARY     
+                </p>
+                </div>
+            </div>
+            <iframe id="video3" width="560" height="315" src="https://www.youtube.com/embed/zJub0cpKKJc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+            <div class="small-div">
+                <img src="tekkz v fifilza.jpg" alt=""style="width: 100%; height: auto; object-fit: contain;">
+                <div class="text-container4">
+                <p>
+                  TEKKZ V FIFILZA
+                </p>
+            </div>
+            </div>
+            <iframe id="video4" width="560" height="315" src="https://www.youtube.com/embed/NHFXLFbm134" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+            <div class="small-div">
+                <img src="download140.jpg" alt=""style="width: 100%; height: auto; object-fit: contain;">
+               <div class="text-container5">
+                <p>
+                  FIFA 19 XBOX FINAL  
+                </p>
+               </div> 
+            </div>
+            <iframe id="video5" width="560" height="315" src="https://www.youtube.com/embed/wJGOO-mRJuQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+            <div class="small-div">
+                <img src="tekkz v anders.jpg" alt=""style="width: 100%; height: auto; object-fit: contain;">
+                <div class="text-container6">
+                <p>
+                   RBLZ GAMING V FNATIC
+                </p>
+              </div>
+            </div>
+            <iframe id="video6" width="560" height="315" src="https://www.youtube.com/embed/c7vKbl_-FWc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+            <div class="small-div">
+                <img src="tuga.jpg" alt=""style="width: 100%; height: auto; object-fit: contain;">
+                <div class="text-container7">
+                <p>
+                   TEKKZ V TUGA FINAL 
+                </p>
+                </div>
+            </div>
+            <iframe id="video7" width="560" height="315" src="https://www.youtube.com/embed/8mnqahFvoP8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <div class="small-div">
+                <img src="NR7.jpg" alt=""style="width: 100%; height: auto; object-fit: contain;">
+            <div class="text-container8">
+                <p>
+                   TEKKZ V NRASECK    
+                </p>
+            </div>
+            </div>
+            <iframe id="video8" width="560" height="315" src="https://www.youtube.com/embed/5wlZ0Xr3YB4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <div class="small-div">
+                <img src="goatmoh.jpg" alt=""style="width: 100%; height: auto; object-fit: contain;">
+            <div class="text-container9">
+               <p>
+                  TEKKZ V GOATMOH
+               </p>
+            </div>    
+            </div>
+            <iframe id="video9" width="560" height="315" src="https://www.youtube.com/embed/69Wb-2ujkFk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </div>
+        <img src="TEKKZbanner.jpg" alt=""style="width: 100%; height: auto; object-fit: contain;">
+            <p>
+             
+            </p>
+        </div>
+    <div class="center-div">
+     
+      
+        <img src="finalimage.jpg" class="initial-image">
+        <img src="trent.jpg" class="new-image">
+    </div>
+     
+    <script>
+    const video = document.getElementById("video");
+    const showVideoButton1 = document.querySelector(".small-div:nth-of-type(1)");
+    
+    showVideoButton1.addEventListener("click", function() {
+      video2.style.display = "none";
+      if (video.style.display === "block") {
+        video.style.display = "none";
+      } else {
+        video.style.display = "block";
+      }
+    });
+    
+    const video2 = document.getElementById("video2");
+    const showVideoButton2 = document.querySelector(".small-div:nth-of-type(2)");
+    
+    showVideoButton2.addEventListener("click", function() {
+      video.style.display = "none";
+      if (video2.style.display === "block") {
+        video2.style.display = "none";
+      } else {
+        video2.style.display = "block";
+      }
+    });
+
+    const video3 = document.getElementById("video3");
+    const showVideoButton3 = document.querySelector(".small-div:nth-of-type(3)");
+    
+    showVideoButton3.addEventListener("click", function() {
+      video.style.display = "none";
+      if (video3.style.display === "block") {
+        video3.style.display = "none";
+      } else {
+        video3.style.display = "block";
+      }
+    });
+
+    const video4 = document.getElementById("video4");
+    const showVideoButton4 = document.querySelector(".small-div:nth-of-type(4)");
+    
+    showVideoButton4.addEventListener("click", function() {
+      video.style.display = "none";
+      if (video4.style.display === "block") {
+        video4.style.display = "none";
+      } else {
+        video4.style.display = "block";
+      }
+    });
+
+    const video5 = document.getElementById("video5");
+    const showVideoButton5 = document.querySelector(".small-div:nth-of-type(5)");
+    
+    showVideoButton5.addEventListener("click", function() {
+      video.style.display = "none";
+      if (video5.style.display === "block") {
+        video5.style.display = "none";
+      } else {
+        video5.style.display = "block";
+      }
+    });
+
+    const video6 = document.getElementById("video6");
+    const showVideoButton6 = document.querySelector(".small-div:nth-of-type(6)");
+    
+    showVideoButton6.addEventListener("click", function() {
+      video.style.display = "none";
+      if (video6.style.display === "block") {
+        video6.style.display = "none";
+      } else {
+        video6.style.display = "block";
+      }
+    });
+
+    const video7 = document.getElementById("video7");
+    const showVideoButton7 = document.querySelector(".small-div:nth-of-type(7)");
+    
+    showVideoButton7.addEventListener("click", function() {
+      video.style.display = "none";
+      if (video7.style.display === "block") {
+        video7.style.display = "none";
+      } else {
+        video7.style.display = "block";
+      }
+    }); 
+  
+    const video8 = document.getElementById("video8");
+    const showVideoButton8 = document.querySelector(".small-div:nth-of-type(8)");
+    
+    showVideoButton8.addEventListener("click", function() {
+      video.style.display = "none";
+      if (video8.style.display === "block") {
+        video8.style.display = "none";
+      } else {
+        video8.style.display = "block";
+      }
+    });
+
+    const video9 = document.getElementById("video9");
+    const showVideoButton9 = document.querySelector(".small-div:nth-of-type(9)");
+    
+    showVideoButton9.addEventListener("click", function() {
+      video.style.display = "none";
+      if (video9.style.display === "block") {
+        video9.style.display = "none";
+      } else {
+        video9.style.display = "block";
+      }
+    });
+
+    
+   
+  </script>  
+              
+          
+    </body>
+</html>
+
+
